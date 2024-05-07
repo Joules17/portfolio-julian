@@ -1,0 +1,36 @@
+.custom-button {
+  position: relative;
+  display: inline-block;
+  padding: 20px 50px;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%); 
+  transition: transform 0.3s ease;
+  z-index: -1; 
+}
+
+.custom-button:hover::before {
+  transform: translateX(0); 
+}
+
+.custom-button:hover {
+  color: white;
+  z-index: 2; 
+}
