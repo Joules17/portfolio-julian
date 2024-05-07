@@ -15,3 +15,11 @@
 .menu {
     display: flex;
 }
+
+.rotate-arrow {
+    transition: transform 0.3s ease;
+  }
+
+.rotate-arrow.rotate {
+    transform: rotate(180deg);
+}

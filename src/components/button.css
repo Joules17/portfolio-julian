@@ -34,3 +34,36 @@
   color: white;
   z-index: 2; 
 }
+
+.appbar-button {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer; 
+  overflow: hidden;
+  padding: 20px;
+  border: none; 
+  background-color: transparent; 
+}
+
+.appbar-button:hover {
+  color: #888; 
+}
+
+.appbar-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #888; 
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.appbar-button:hover::after {
+  transform: scaleX(1); 
+}
