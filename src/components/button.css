@@ -36,19 +36,23 @@
 }
 
 .appbar-button {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  cursor: pointer; 
+  cursor: pointer;
   overflow: hidden;
   padding: 20px;
-  border: none; 
-  background-color: transparent; 
+  border: none;
+  background-color: transparent;
+  gap: 1rem; 
 }
 
 .appbar-button:hover {
   color: #888; 
+  text-decoration: underline;
 }
 
 .appbar-button::after {
@@ -58,12 +62,33 @@
   bottom: 0;
   height: 2px;
   width: 100%;
-  background-color: #888; 
-  transform: scaleX(0);
-  transform-origin: bottom left;
-  transition: transform 0.3s ease;
 }
 
-.appbar-button:hover::after {
-  transform: scaleX(1); 
+.appbar-button.clicked {
+  background-color: #333333;
+  color: #fff; 
+  transition: 0.5s ease;
+  
+}
+
+
+.appbar-button-menu {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 10px 20px;
+  border: none;
+  color: #fff; 
+  background-color: transparent;
+  gap: 1rem; 
+}
+
+.appbar-button-menu:hover {
+  color: #ffcd33; 
+  font-weight: 400;
+  text-decoration: underline;
 }

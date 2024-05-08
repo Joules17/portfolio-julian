@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-logo,
+.hero-text {
+  margin: auto 50px;
+  padding: auto;
+  border: 5px solid #f1f1f1;
+  text-align: center;
+  width: 80%;
+}
+
+.astronaut {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-logo,
+  .hero-text {
+    width: 30rem;
+  }
+}
