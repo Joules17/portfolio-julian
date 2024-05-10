@@ -10,8 +10,10 @@ const Hero = () => {
         <img src={astronaut} alt="astronaut" className="astronaut" />
       </div>
       <div className="hero-text">
-        <h1>Web & Software Developer</h1>
-        <p>Developer</p>
+        <h1>Julián Andrés Salamanca Tellez</h1>
+        <h2>
+          Web & Software <span className="hero-gradient">DEV</span>
+        </h2>
         <Button className="custom-button">
           Contact Me
           <PiArrowRightLight />

@@ -39,6 +39,16 @@ const AppBar = () => {
               <Button className="appbar-button-menu">CV / Rezume </Button>
               <Button className="appbar-button-menu">Projects</Button>
               <span className="appbar-title"> Contact Me </span>
+              <a
+                href="https://www.linkedin.com/in/julian-andres-salamanca-tellez-a88230212/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="appbar-button-menu"
+              >
+                LinkedIn
+              </a>
+              <Button className="appbar-button-menu">Projects</Button>
+              <span style={{ marginBottom: "10px" }}></span>
             </div>
           </div>
           <div className="menu">

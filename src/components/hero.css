@@ -18,6 +18,14 @@
   width: 100%;
 }
 
+.hero-gradient {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(to top left, #f9d423, #ff4e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 768px) {
   .hero {
     flex-direction: row;

@@ -48,7 +48,7 @@
 }
 
 .dropdown.visible {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .appbar-title {
@@ -59,7 +59,8 @@
   font-weight: 500;
   text-transform: uppercase;
   overflow: hidden;
-  padding: 20px 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
   border: none;
   color: #ffcd33;
   background-color: transparent;
