@@ -1,8 +1,13 @@
+.hero-container {
+  position: relative;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 10;
 }
 
 .hero-logo,
@@ -11,7 +16,12 @@
   padding: auto;
   border: 5px solid #f1f1f1;
   text-align: center;
-  width: 80%;
+  width: 100%;
+}
+
+.hero-text {
+  background: #f9f9f9;
+  color: #333;
 }
 
 .astronaut {
@@ -24,6 +34,19 @@
   background: linear-gradient(to top left, #f9d423, #ff4e50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 @media (min-width: 768px) {

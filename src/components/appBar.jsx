@@ -22,7 +22,7 @@ const AppBar = () => {
     <>
       <header className="app-bar">
         <div className="title">
-          <span>Developer</span>
+          <span>Portfolio</span>
         </div>
         <div className="menu">
           <div className="menu">
